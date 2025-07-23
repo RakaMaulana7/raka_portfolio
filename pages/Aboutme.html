@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Portofolio</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-custom border-b border-border">
+        <div class="container-custom">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">B</span>
+                    </div>
+                    <span class="font-semibold text-xl text-text-primary">Raka Maulana Bintang</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="Home.html" class="text-text-secondary hover:text-primary transition-colors">Beranda</a>
+                    <a href="Aboutme.html" class="text-primary font-semibold">Tentang Saya</a>
+                    <a href="Education.html" class="text-text-secondary hover:text-primary transition-colors">Pendidikan</a>
+                    <a href="Portfolio.html" class="text-text-secondary hover:text-primary transition-colors">Portfolio</a>
+                    <a href="Skills.html" class="text-text-secondary hover:text-primary transition-colors">Keahlian</a>
+                    <a href="Contact.html" class="btn-primary">Kontak</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-surface transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-border mt-4">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <a href="Home.html" class="text-text-secondary">Beranda</a>
+                    <a href="Aboutme.html" class="text-primary font-semibold">Tentang Saya</a>
+                    <a href="Education.html" class="text-text-secondary">Pendidikan</a>
+                    <a href="Portfolio.html" class="text-text-secondary">Portfolio</a>
+                    <a href="Skills.html" class="text-text-secondary">Keahlian</a>
+                    <a href="Contact.html" class="text-text-secondary">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-primary-50 to-accent-50">
+        <div class="container-custom">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="space-y-6 animation-fade-in">
+                    <div class="space-y-2">
+                        <p class="text-text-secondary text-lg">Mari berkenalan lebih dekat</p>
+                        <h1 class="text-4xl lg:text-5xl font-bold text-text-primary">
+                            Cerita Saya
+                            <span class="block text-2xl lg:text-3xl text-text-secondary font-normal mt-2">Perjalanan Menuju Web Developer dan Data science</span>
+                        </h1>
+                    </div>
+                    
+                    <p class="text-lg text-text-secondary leading-relaxed max-w-lg text-justify">
+                        Dari rasa penasaran sederhana tentang bagaimana sebuah website berjalan dan bagaimana data bisa bercerita, saya mulai menekuni dunia <em>web development</em> dan <em>Data science</em> sebagai mahasiswa Informatika. Setiap baris kode dan setiap analisis data adalah langkah kecil menuju impian besar: menciptakan solusi digital yang cerdas, interaktif, dan bermakna.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="Portfolio.html" class="btn-primary">
+                            Lihat Karya Saya
+                        </a>
+                        <a href="Contact.html" class="btn-secondary">
+                            Mari Berkolaborasi
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="flex justify-center lg:justify-end animation-slide-up">
+                    <div class="relative">
+                        <div class="w-80 h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden shadow-xl">
+                            <img src="/img/5.jpg" alt="Raka studying at university campus" class="w-full h-full object-cover" onerror="this.src='https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        </div>
+                        <!-- Floating Quote -->
+                        <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg max-w-xs">
+                            <p class="text-sm text-text-secondary italic">"Setiap masalah adalah kesempatan untuk belajar sesuatu yang baru"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Journey Timeline -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Perjalanan Saya
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Setiap langkah dalam perjalanan ini membentuk cara saya memandang teknologi dan pengembangan web
+                </p>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-border"></div>
+
+                <!-- Timeline Items -->
+                <div class="space-y-12">
+                    <!-- First Interest in Technology -->
+                    <div class="relative flex items-center">
+                        <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-primary rounded-full border-4 border-white shadow-md flex items-center justify-center">
+                            <span class="text-white text-sm font-bold">1</span>
+                        </div>
+                        <div class="ml-16 md:ml-0 md:w-1/2 md:pr-8">
+                            <div class="card-elevated">
+                                <div class="flex items-center mb-4">
+                                    <svg class="w-6 h-6 text-accent mr-3" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                    <h3 class="text-xl font-semibold text-text-primary">Awal Ketertarikan</h3>
+                                </div>
+                                <p class="text-text-secondary mb-3">
+                                    Pertama kali melihat website dan data visualisasi, saya bertanya-tanya: “Bagaimana ini bisa dibuat dan bagaimana datanya diolah?” Rasa penasaran itulah yang memulai semuanya.
+                                </p>
+                                <span class="text-sm text-accent font-semibold">2021 - 2023 (SMA)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- First Learning Experience -->
+                    <div class="relative flex items-center">
+                        <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-accent rounded-full border-4 border-white shadow-md flex items-center justify-center">
+                            <span class="text-white text-sm font-bold">2</span>
+                        </div>
+                        <div class="ml-16 md:ml-0 md:w-1/2 md:pl-8 md:ml-auto">
+                            <div class="card-elevated">
+                                <div class="flex items-center mb-4">
+                                    <svg class="w-6 h-6 text-primary mr-3" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 14l9-5-9-5-9 5 9 5z"/>
+                                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                                    </svg>
+                                    <h3 class="text-xl font-semibold text-text-primary">Memulai Aksi</h3>
+                                </div>
+                                <p class="text-text-secondary mb-3">
+                                    Mulai mencoba HTML, CSS, dan Python dari tutorial online. Website pertama saya sederhana, dan saya juga membuat program kecil untuk mengolah data. Kebanggaan kecil ini memicu semangat belajar lebih dalam.
+                                </p>
+                                <span class="text-sm text-accent font-semibold">2023 - Awal kuliah</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- University Journey -->
+                    <div class="relative flex items-center">
+                        <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-success rounded-full border-4 border-white shadow-md flex items-center justify-center">
+                            <span class="text-white text-sm font-bold">3</span>
+                        </div>
+                        <div class="ml-16 md:ml-0 md:w-1/2 md:pr-8">
+                            <div class="card-elevated">
+                                <div class="flex items-center mb-4">
+                                    <svg class="w-6 h-6 text-success mr-3" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+                                    </svg>
+                                    <h3 class="text-xl font-semibold text-text-primary">Kuliah Informatika</h3>
+                                </div>
+                                <p class="text-text-secondary mb-3">
+                                    Memilih jurusan Informatika untuk memperluas wawasan. Saya mulai memahami konsep penting di balik pengembangan web modern dan analisis data, seperti algoritma, struktur data, dan logika pemrograman.
+                                </p>
+                                <span class="text-sm text-accent font-semibold">2023 - Sekarang</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Current Focus -->
+                    <div class="relative flex items-center">
+                        <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-warning rounded-full border-4 border-white shadow-md flex items-center justify-center">
+                            <span class="text-white text-sm font-bold">4</span>
+                        </div>
+                        <div class="ml-16 md:ml-0 md:w-1/2 md:pl-8 md:ml-auto">
+                            <div class="card-elevated">
+                                <div class="flex items-center mb-4">
+                                    <svg class="w-6 h-6 text-warning mr-3" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                    </svg>
+                                    <h3 class="text-xl font-semibold text-text-primary">Fokus Memperdalam</h3>
+                                </div>
+                                <p class="text-text-secondary mb-3">
+                                    Menggabungkan keahlian front-end (JavaScript, React, Tailwind) dengan data science (Python, Pandas, visualisasi data).
+                                    Setiap proyek jadi latihan nyata untuk mengasah skill dan siap hadapi dunia kerja.
+                                </p>
+                                <span class="text-sm text-accent font-semibold">2024 - Berkelanjutan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Philosophy -->
+    <section class="section-padding bg-surface">
+        <div class="container-custom">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-text-primary">
+                        Filosofi Pengembangan Saya
+                    </h2>
+                    <p class="text-lg text-text-secondary leading-relaxed">
+                        Setiap baris kode bukan hanya soal fungsi, tapi juga menciptakan solusi yang berdampak—baik di web maupun data.
+                    </p>
+
+                    <!-- Philosophy Cards -->
+                    <div class="space-y-4">
+                        <div class="expandable-card card-elevated cursor-pointer" onclick="toggleExpand(this)">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                        <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-lg font-semibold text-text-primary">Kualitas di Atas Kecepatan</h3>
+                                </div>
+                                <svg class="w-5 h-5 text-text-secondary transition-transform duration-300 expand-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </div>
+                            <div class="expandable-content mt-4 hidden">
+                                <p class="text-text-secondary">
+                                    Saya memprioritaskan kode yang terstruktur dan mudah dipahami, serta analisis data yang jujur dan bernilai. Baik saat membangun UI/UX yang efisien atau mengolah data jadi wawasan, prinsip utamanya tetap sama: kualitas lebih penting dari kecepatan.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="expandable-card card-elevated cursor-pointer" onclick="toggleExpand(this)">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 bg-accent-100 rounded-lg flex items-center justify-center mr-4">
+                                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-lg font-semibold text-text-primary">User Experience First</h3>
+                                </div>
+                                <svg class="w-5 h-5 text-text-secondary transition-transform duration-300 expand-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </div>
+                            <div class="expandable-content mt-4 hidden">
+                                <p class="text-text-secondary">
+                                    Teknologi hanyalah alat — yang utama adalah pengalaman pengguna. Dalam pengembangan web, saya memastikan UI responsif dan intuitif. Dalam data science, visualisasi harus mudah dipahami dan memberi makna.Setiap desain atau analisis harus mendukung pengguna, bukan membingungkan mereka.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="expandable-card card-elevated cursor-pointer" onclick="toggleExpand(this)">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 bg-success-100 rounded-lg flex items-center justify-center mr-4">
+                                        <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 14l9-5-9-5-9 5 9 5z"/>
+                                            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-lg font-semibold text-text-primary">Belajar Berkelanjutan</h3>
+                                </div>
+                                <svg class="w-5 h-5 text-text-secondary transition-transform duration-300 expand-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </div>
+                            <div class="expandable-content mt-4 hidden">
+                                <p class="text-text-secondary">
+                                    Teknologi terus berubah.
+                                    Saya rutin belajar hal baru, baik di pengembangan web seperti React dan Tailwind, maupun di data science seperti Python dan visualisasi data.
+                                    Bagi saya, belajar adalah bagian penting dari jadi developer yang terus berkembang.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="/img/w.jpg" alt="Clean code philosophy workspace" class="w-full h-96 object-cover rounded-2xl shadow-lg" onerror="this.src='https://images.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Web Development -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Kenapa Web Dev & Data Science?
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Dari banyak hal di dunia teknologi, saya paling tertarik pada web development dan data science karena keduanya seru dan saling melengkapi.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Creative Expression -->
+                <div class="card-elevated text-center group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-primary-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-4"> Bisa Bikin & Bisa Ngolah</h3>
+                    <p class="text-text-secondary">
+                        Dengan web dev, saya bisa bikin tampilan website yang menarik dan mudah dipakai. Dengan data science, saya bisa mengolah data supaya lebih mudah dipahami.
+                    </p>
+                </div>
+
+                <!-- Impact & Accessibility -->
+                <div class="card-elevated text-center group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-accent to-accent-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">Bermanfaat Buat Orang Lain</h3>
+                    <p class="text-text-secondary">
+                        Website dan data bisa dipakai banyak orang. Entah itu untuk belajar, kerja, atau cuma cari info—rasanya senang kalau hasil kerja saya bisa bantu orang lain.
+                    </p>
+                </div>
+
+                <!-- Continuous Learning -->
+                <div class="card-elevated text-center group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-success to-success-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 14l9-5-9-5-9 5 9 5z"/>
+                            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">Selalu Belajar</h3>
+                    <p class="text-text-secondary">
+                        Website dan data bisa dipakai banyak orang. Entah itu untuk belajar, kerja, atau cuma cari info—rasanya senang kalau hasil kerja saya bisa bantu orang lain.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beyond Coding -->
+    <section class="section-padding bg-gradient-to-r from-primary-50 to-accent-50">
+        <div class="container-custom">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Di Luar Coding
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Aktivitas sederhana yang tetap mendukung perkembangan saya sebagai web developer dan data enthusiast.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Reading -->
+                <div class="card-elevated text-center">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-text-primary mb-2">Membaca</h3>
+                    <p class="text-sm text-text-secondary">Artikel teknologi, desain, dan buku pengembangan diri jadi asupan rutin buat memperluas wawasan.</p>
+                </div>
+
+                <!-- Photography -->
+                <div class="card-elevated text-center">
+                    <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 2l1.17 1H14l1.17-1H17c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h2zm3 15c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0-8c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-text-primary mb-2">Fotografi</h3>
+                    <p class="text-sm text-text-secondary">Nggak cuma hobi, tapi juga bantu melatih kepekaan visual dan komposisi desain.</p>
+                </div>
+
+                <!-- Belajar -->
+                <div class="card-elevated text-center">
+                    <div class="w-12 h-12 bg-success-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A2.996 2.996 0 0 0 17.06 7c-.8 0-1.54.37-2.01.97l-2.05 2.58V12h-2v7h2v3h3zm-8.5-11c.83 0 1.5-.67 1.5-1.5S11.83 8 11 8s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm1.5 1h-3c-1.1 0-2 .9-2 2v7h2v7h3v-7h2v-7c0-1.1-.9-2-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-text-primary mb-2">Belajar</h3>
+                    <p class="text-sm text-text-secondary">Sering eksplorasi topik baru lewat video, kursus online, atau eksperimen proyek kecil.</p>
+                </div>
+
+                <!-- Music -->
+                <div class="card-elevated text-center">
+                    <div class="w-12 h-12 bg-warning-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-warning" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-text-primary mb-2">Musik</h3>
+                    <p class="text-sm text-text-secondary">Teman setia saat ngoding — bantu tetap fokus dan kadang justru jadi sumber ide segar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Indonesian Values -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <img src="/img/r.jpg" alt="Indonesian university campus" class="w-full h-96 object-cover rounded-2xl shadow-lg" onerror="this.src='https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl"></div>
+                </div>
+
+                <div class="space-y-6">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-text-primary">
+                        Nilai-Nilai yang Saya Pegang
+                    </h2>
+                    <p class="text-lg text-text-secondary leading-relaxed">
+                        Sebagai Mahasiswa yang ingin Berkembang, saya membawa nilai-nilai budaya yang kuat dalam setiap aspek pekerjaan saya.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-text-primary mb-1">Menghormati Proses Belajar</h3>
+                                <p class="text-text-secondary">Pendidikan adalah investasi jangka panjang. Saya menghargai setiap kesempatan belajar, baik formal maupun informal.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="m22 21-3-3m0 0a5.5 5.5 0 1 0-7.78-7.78 5.5 5.5 0 0 0 7.78 7.78Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-text-primary mb-1">Gotong Royong dalam Tim</h3>
+                                <p class="text-text-secondary">Kerja sama dan saling membantu adalah kunci kesuksesan. Tidak ada yang berhasil sendirian.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-success-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-text-primary mb-1">Dukungan Keluarga</h3>
+                                <p class="text-text-secondary">Keluarga adalah motivasi terbesar. Dukungan mereka memberikan kekuatan untuk terus berkembang.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section-padding bg-gradient-to-r from-primary to-primary-700">
+        <div class="container-custom">
+            <div class="text-center text-white">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">
+                    Mari Berkolaborasi
+                </h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+                    Saya selalu terbuka untuk proyek baru, diskusi teknologi, atau sekadar berbagi pengalaman dengan sesama developer
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="Portfolio.html" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        Lihat Portfolio Saya
+                    </a>
+                    <a href="Contact.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors">
+                        Hubungi Saya
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-white section-padding">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">B</span>
+                        </div>
+                        <span class="font-semibold text-xl">Raka Maulana Bintang</span>
+                    </div>
+                    <p class="text-secondary-300">
+                        Mahasiswa Informatika yang berminat dalam web development dan sains data, selalu siap untuk tantangan baru.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Navigasi</h3>
+                    <div class="space-y-2">
+                        <a href="Home.html" class="block text-secondary-300 hover:text-white transition-colors">Beranda</a>
+                        <a href="Aboutme.html" class="block text-secondary-300 hover:text-white transition-colors">Tentang Saya</a>
+                        <a href="Portfolio.html" class="block text-secondary-300 hover:text-white transition-colors">Portfolio</a>
+                        <a href="Skills.html" class="block text-secondary-300 hover:text-white transition-colors">Keahlian</a>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Kontak</h3>
+                    <div class="space-y-2">
+                        <p class="text-secondary-300">
+                            <span class="block">Email: rakamaulana215@gmail.com</span>
+                            <span class="block">WhatsApp: +62 881-0277-95533</span>
+                            <span class="block">Surabaya, Indonesia</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Ikuti Saya</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/RakaMaulana7" class="p-2 bg-secondary-800 rounded-lg hover:bg-secondary-700 transition-colors">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-5 h-5" />
+                        </a>
+                        <a href="https://www.instagram.com/_maskaa7/" class="p-2 bg-secondary-800 rounded-lg hover:bg-secondary-700 transition-colors">
+                            <svg class="w-5 h-5 text-pink-400" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary-800 pt-8 text-center">
+                <p class="text-secondary-400">
+                    © 2025 Raka Maulana Bintang.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Expandable Cards
+        function toggleExpand(card) {
+            const content = card.querySelector('.expandable-content');
+            const icon = card.querySelector('.expand-icon');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animation-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and sections
+        document.querySelectorAll('.card, .card-elevated').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

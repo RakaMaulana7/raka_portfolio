@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Showcase - Raka Muhammad | Web Developer Indonesia</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-custom border-b border-border">
+        <div class="container-custom">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">B</span>
+                    </div>
+                    <span class="font-semibold text-xl text-text-primary">Raka Maulana Bintang</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="Home.html" class="text-text-secondary hover:text-primary transition-colors">Beranda</a>
+                    <a href="Aboutme.html" class="text-text-secondary hover:text-primary transition-colors">Tentang Saya</a>
+                    <a href="Education.html" class="text-text-secondary hover:text-primary transition-colors">Pendidikan</a>
+                    <a href="Portfolio.html" class="text-primary font-semibold">Portfolio</a>
+                    <a href="Skills.html" class="text-text-secondary hover:text-primary transition-colors">Keahlian</a>
+                    <a href="Contact.html" class="btn-primary">Kontak</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-surface transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-border mt-4">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <a href="Home.html" class="text-text-secondary">Beranda</a>
+                    <a href="Aboutme.html" class="text-text-secondary">Tentang Saya</a>
+                    <a href="Education.html" class="text-text-secondary">Pendidikan</a>
+                    <a href="Portfolio.html" class="text-primary font-semibold">Portfolio</a>
+                    <a href="Skills.html" class="text-text-secondary">Keahlian</a>
+                    <a href="Contact.html" class="text-text-secondary">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-primary-50 to-accent-50">
+        <div class="container-custom">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="space-y-6 animation-fade-in">
+                    <h1 class="text-4xl lg:text-6xl font-bold text-text-primary">
+                        Portfolio
+                        <span class="block text-2xl lg:text-3xl text-text-secondary font-normal mt-2">Showcase Proyek Web Development</span>
+                    </h1>
+                    
+                    <p class="text-lg text-text-secondary leading-relaxed max-w-2xl mx-auto">
+                        Koleksi proyek web development yang menunjukkan perjalanan pembelajaran dan pertumbuhan keahlian teknis dalam HTML, CSS, dan JavaScript.
+                    </p>
+
+                    <!-- Project Stats -->
+                    <div class="flex justify-center items-center space-x-8 pt-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary" id="project-count">8</div>
+                            <div class="text-sm text-text-secondary">Total Proyek</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-accent">3</div>
+                            <div class="text-sm text-text-secondary">Teknologi Utama</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-success">2025</div>
+                            <div class="text-sm text-text-secondary">Tahun Aktif</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <!-- Filter Controls -->
+            <div class="mb-12">
+                <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+                    <!-- Category Filters -->
+                    <div class="flex flex-wrap gap-3">
+                        <button class="filter-btn active" data-filter="all">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                            </svg>
+                            Semua Proyek
+                        </button>
+                        <button class="filter-btn" data-filter="academic">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                            Proyek Akademis
+                        </button>
+                        <button class="filter-btn" data-filter="personal">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                            Eksperimen Personal
+                        </button>
+                        <button class="filter-btn" data-filter="learning">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                            </svg>
+                            Latihan Pembelajaran
+                        </button>
+                    </div>
+
+                    <!-- Technology Filters -->
+                    <div class="flex flex-wrap gap-2">
+                        <button class="tech-filter active" data-tech="all">Semua</button>
+                        <button class="tech-filter" data-tech="html">HTML5</button>
+                        <button class="tech-filter" data-tech="css">CSS3</button>
+                        <button class="tech-filter" data-tech="javascript">JavaScript</button>
+                        <button class="tech-filter" data-tech="responsive">Responsive</button>
+                    </div>
+                </div>
+
+                <!-- Search and Sort -->
+                <div class="flex flex-col sm:flex-row gap-4 mt-6">
+                    <div class="relative flex-1">
+                        <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                        <input type="text" id="search-input" placeholder="Cari proyek..." class="input-field pl-10" />
+                    </div>
+                    <select id="sort-select" class="input-field w-full sm:w-auto">
+                        <option value="newest">Terbaru</option>
+                        <option value="oldest">Terlama</option>
+                        <option value="name">Nama A-Z</option>
+                    </select>
+                    <button id="reset-filters" class="btn-secondary">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                        Reset
+                    </button>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1: FaceDetect -->
+                <div class="project-card card-elevated group" data-category="academic" data-tech="html css javascript responsive" data-date="2025-01-15" data-name="FaceDetect">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="/img/2.png" alt="Website Sekolah Modern" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                                <span class="font-semibold">Lihat Detail</span>
+                            </div>
+                        </div>
+                        <!-- Project Status Badge -->
+                        <div class="absolute top-3 right-3 bg-success text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Selesai
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-text-primary mb-2">Face Detection</h3>
+                            <p class="text-text-secondary text-sm mb-3">Aplikasi sederhana untuk mendeteksi wajah secara real-time menggunakan kamera.</p>
+                        </div>
+
+                        <!-- Technology Stack -->
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-xs font-medium">Python</span>
+                        </div>
+
+                        <!-- Project Links -->
+                        <div class="flex gap-3 pt-2">
+                            <a href="https://github.com/RakaMaulana7/simple-face-detection-opencv" class="flex-1 bg-secondary text-white text-center py-2 px-4 rounded-lg text-sm font-semibold hover:bg-secondary-700 transition-colors">
+                                <svg class="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+
+                        <!-- Project Details -->
+                        <div class="text-xs text-text-secondary pt-2 border-t border-border">
+                            <div class="flex justify-between">
+                                <span>Kategori: Proyek Akademis</span>
+                                <span>July 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Aplikasi To-Do List -->
+                <div class="project-card card-elevated group" data-category="personal" data-tech="html css javascript" data-date="2024-12-20" data-name="Aplikasi To-Do List">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="/img/1.png" alt="Aplikasi To-Do List" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-accent/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                                <span class="font-semibold">Lihat Detail</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-success text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Selesai
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-text-primary mb-2">Aplikasi To-Do List</h3>
+                            <p class="text-text-secondary text-sm mb-3">Aplikasi manajemen tugas dengan fitur drag & drop, local storage, dan antarmuka yang intuitif untuk produktivitas harian.</p>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-xs font-medium">HTML5</span>
+                            <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-xs font-medium">CSS3</span>
+                            <span class="px-3 py-1 bg-success-100 text-success-600 rounded-full text-xs font-medium">JavaScript</span>
+                        </div>
+
+                        <div class="flex gap-3 pt-2">
+                            <a href="https://manajemen-tugas.infy.uk" class="flex-1 bg-primary text-white text-center py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary-700 transition-colors">
+                                <svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/RakaMaulana7/Manajemen-Tugas" class="flex-1 bg-secondary text-white text-center py-2 px-4 rounded-lg text-sm font-semibold hover:bg-secondary-700 transition-colors">
+                                <svg class="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+
+                        <div class="text-xs text-text-secondary pt-2 border-t border-border">
+                            <div class="flex justify-between">
+                                <span>Kategori: Eksperimen Personal</span>
+                                <span>July 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Maps Web -->
+                <div class="project-card card-elevated group" data-category="learning" data-tech="html css responsive" data-date="2024-11-10" data-name="Landing Page Bisnis">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="/img/3.png" alt="Landing Page Bisnis" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-success/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                                <span class="font-semibold">Lihat Detail</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-success text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Selesai
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-text-primary mb-2">Maps berbasis Web</h3>
+                            <p class="text-text-secondary text-sm mb-3">Halaman landing yang responsif untuk startup teknologi lokal dengan fokus pada konversi dan user experience yang optimal.</p>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-xs font-medium">HTML5</span>
+                            <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-xs font-medium">CSS3</span>
+                            <span class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-xs font-medium">Responsive</span>
+                        </div>
+
+                        <div class="flex gap-3 pt-2">
+                            <a href="https://github.com/RakaMaulana7/Maps-web" class="flex-1 bg-secondary text-white text-center py-2 px-4 rounded-lg text-sm font-semibold hover:bg-secondary-700 transition-colors">
+                                <svg class="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+
+                        <div class="text-xs text-text-secondary pt-2 border-t border-border">
+                            <div class="flex justify-between">
+                                <span>Kategori: Latihan Pembelajaran</span>
+                                <span>Nov 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Kalkulator Interaktif -->
+                <div class="project-card card-elevated group" data-category="learning" data-tech="html css javascript" data-date="2024-10-05" data-name="Kalkulator Interaktif">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="/img/kal.png" alt="Kalkulator Interaktif" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=2339&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-warning/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                                <span class="font-semibold">Lihat Detail</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-success text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Selesai
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-text-primary mb-2">Kalkulator Interaktif</h3>
+                            <p class="text-text-secondary text-sm mb-3">Aplikasi kalkulator dengan antarmuka yang menarik dan fungsi matematika dasar menggunakan JavaScript murni.</p>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-xs font-medium">HTML5</span>
+                            <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-xs font-medium">CSS3</span>
+                            <span class="px-3 py-1 bg-success-100 text-success-600 rounded-full text-xs font-medium">JavaScript</span>
+                        </div>
+
+                        <div class="flex gap-3 pt-2">
+                            <a href="https://rakamaulana7.github.io/Kalkulator/" class="flex-1 bg-primary text-white text-center py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary-700 transition-colors">
+                                <svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/RakaMaulana7/Kalkulator" class="flex-1 bg-secondary text-white text-center py-2 px-4 rounded-lg text-sm font-semibold hover:bg-secondary-700 transition-colors">
+                                <svg class="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+
+                        <div class="text-xs text-text-secondary pt-2 border-t border-border">
+                            <div class="flex justify-between">
+                                <span>Kategori: Latihan Pembelajaran</span>
+                                <span>Okt 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Portfolio Personal V1 -->
+                <div class="project-card card-elevated group" data-category="personal" data-tech="html css responsive" data-date="2024-09-15" data-name="Portfolio Personal V1">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="https://images.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="Portfolio Personal V1" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                                <span class="font-semibold">Lihat Detail</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-warning text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Archived
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-text-primary mb-2">Portfolio Personal V1</h3>
+                            <p class="text-text-secondary text-sm mb-3">Versi pertama portfolio personal dengan desain minimalis dan fokus pada konten yang mudah dibaca.</p>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-xs font-medium">HTML5</span>
+                            <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-xs font-medium">CSS3</span>
+                            <span class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-xs font-medium">Responsive</span>
+                        </div>
+
+                        <div class="flex gap-3 pt-2">
+                            <a href="javascript:void(0)" class="flex-1 bg-primary text-white text-center py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary-700 transition-colors">
+                                <svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/raka-dev/portfolio-v1" class="flex-1 bg-secondary text-white text-center py-2 px-4 rounded-lg text-sm font-semibold hover:bg-secondary-700 transition-colors">
+                                <svg class="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+
+                        <div class="text-xs text-text-secondary pt-2 border-t border-border">
+                            <div class="flex justify-between">
+                                <span>Kategori: Eksperimen Personal</span>
+                                <span>Sep 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Game Tebak Angka -->
+                <div class="project-card card-elevated group" data-category="learning" data-tech="html css javascript" data-date="2024-08-20" data-name="Game Tebak Angka">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="/img/previuw.png" alt="Game Tebak Angka" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-accent/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                                <span class="font-semibold">Lihat Detail</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-success text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Selesai
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-text-primary mb-2">Game Tebak Angka</h3>
+                            <p class="text-text-secondary text-sm mb-3">Game interaktif sederhana untuk menebak angka dengan sistem scoring dan feedback real-time kepada pemain.</p>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-xs font-medium">HTML5</span>
+                            <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-xs font-medium">CSS3</span>
+                            <span class="px-3 py-1 bg-success-100 text-success-600 rounded-full text-xs font-medium">JavaScript</span>
+                        </div>
+
+                        <div class="flex gap-3 pt-2">
+                            <a href="https://rakamaulana7.github.io/Tebak-Angka/" class="flex-1 bg-primary text-white text-center py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary-700 transition-colors">
+                                <svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/RakaMaulana7/Tebak-Angka" class="flex-1 bg-secondary text-white text-center py-2 px-4 rounded-lg text-sm font-semibold hover:bg-secondary-700 transition-colors">
+                                <svg class="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+
+                        <div class="text-xs text-text-secondary pt-2 border-t border-border">
+                            <div class="flex justify-between">
+                                <span>Kategori: Latihan Pembelajaran</span>
+                                <span>Agu 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: Form Validasi -->
+                <div class="project-card card-elevated group" data-category="academic" data-tech="html css javascript" data-date="2024-07-10" data-name="Form Validasi">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="/img/form.png" alt="Form Validasi" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-success/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                                <span class="font-semibold">Lihat Detail</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-success text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Selesai
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-text-primary mb-2">Form Validasi</h3>
+                            <p class="text-text-secondary text-sm mb-3">Sistem form dengan validasi real-time menggunakan JavaScript untuk memastikan input data yang akurat dan user-friendly.</p>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-xs font-medium">HTML5</span>
+                            <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-xs font-medium">CSS3</span>
+                            <span class="px-3 py-1 bg-success-100 text-success-600 rounded-full text-xs font-medium">JavaScript</span>
+                        </div>
+
+                        <div class="flex gap-3 pt-2">
+                            <a href="https://rakamaulana7.github.io/form-validasi-elegan/" class="flex-1 bg-primary text-white text-center py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary-700 transition-colors">
+                                <svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/RakaMaulana7/form-validasi-elegan" class="flex-1 bg-secondary text-white text-center py-2 px-4 rounded-lg text-sm font-semibold hover:bg-secondary-700 transition-colors">
+                                <svg class="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+
+                        <div class="text-xs text-text-secondary pt-2 border-t border-border">
+                            <div class="flex justify-between">
+                                <span>Kategori: Proyek Akademis</span>
+                                <span>Jul 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8: CSS Grid Layout -->
+                <div class="project-card card-elevated group" data-category="learning" data-tech="html css responsive" data-date="2024-06-05" data-name="CSS Grid Layout">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="/img/image.png" alt="CSS Grid Layout" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                                <span class="font-semibold">Lihat Detail</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-success text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Selesai
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-text-primary mb-2">CSS Grid Layout</h3>
+                            <p class="text-text-secondary text-sm mb-3">Eksplorasi mendalam CSS Grid untuk membuat layout yang kompleks dan responsif dengan teknik modern.</p>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-xs font-medium">HTML5</span>
+                            <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-xs font-medium">CSS3</span>
+                            <span class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-xs font-medium">Responsive</span>
+                        </div>
+
+                        <div class="flex gap-3 pt-2">
+                            <a href="https://rakamaulana7.github.io/css-grid-layout/" class="flex-1 bg-primary text-white text-center py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary-700 transition-colors">
+                                <svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/RakaMaulana7/css-grid-layout" class="flex-1 bg-secondary text-white text-center py-2 px-4 rounded-lg text-sm font-semibold hover:bg-secondary-700 transition-colors">
+                                <svg class="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+
+                        <div class="text-xs text-text-secondary pt-2 border-t border-border">
+                            <div class="flex justify-between">
+                                <span>Kategori: Latihan Pembelajaran</span>
+                                <span>Jun 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Results Message -->
+            <div id="no-results" class="hidden text-center py-16">
+                <svg class="w-16 h-16 mx-auto text-text-secondary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6-4h6m2 5.291A7.962 7.962 0 0112 15c-2.34 0-4.467-.881-6.08-2.33M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+                </svg>
+                <h3 class="text-xl font-semibold text-text-primary mb-2">Tidak Ada Proyek Ditemukan</h3>
+                <p class="text-text-secondary">Coba ubah filter atau kata kunci pencarian Anda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Section -->
+<section class="section-padding bg-surface">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+          Case Study Unggulan
+        </h2>
+        <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+          Analisis mendalam dari proyek-proyek yang menunjukkan proses pembelajaran dan problem-solving
+        </p>
+      </div>
+  
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Case Study Content -->
+        <div class="space-y-6">
+          <!-- Challenge -->
+          <div class="card-elevated">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-text-primary">Challenge</h3>
+                <p class="text-text-secondary text-sm">Tantangan yang Dihadapi</p>
+              </div>
+            </div>
+            <p class="text-text-secondary">
+              Membuat form pendaftaran dengan tampilan elegan dan validasi real-time yang menjaga pengalaman pengguna tetap lancar dan responsif.
+            </p>
+          </div>
+  
+          <!-- Approach -->
+          <div class="card-elevated">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-text-primary">Approach</h3>
+                <p class="text-text-secondary text-sm">Pendekatan Solusi</p>
+              </div>
+            </div>
+            <p class="text-text-secondary">
+              Menggunakan HTML5 dan CSS3 untuk struktur dan desain responsif, serta JavaScript untuk validasi form secara real-time dan notifikasi dinamis.
+            </p>
+          </div>
+  
+          <!-- Lessons Learned -->
+          <div class="card-elevated">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-success rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-text-primary">Lessons Learned</h3>
+                <p class="text-text-secondary text-sm">Pembelajaran yang Didapat</p>
+              </div>
+            </div>
+            <p class="text-text-secondary">
+              Pentingnya memberikan feedback instan kepada pengguna, menjaga performa tetap optimal meskipun terdapat interaksi JavaScript secara dinamis.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Code Snippet Preview -->
+        <div class="space-y-6">
+          <!-- Snippet -->
+          <div class="card-elevated">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-lg font-semibold text-text-primary">Code Snippet</h3>
+              <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-xs font-medium">JavaScript</span>
+            </div>
+            <div class="bg-secondary-900 rounded-lg p-4 overflow-x-auto">
+              <pre class="text-sm text-secondary-100"><code>// Validasi Username
+  function checkUsername() {
+    const value = username.value.trim();
+    const small = username.nextElementSibling;
+    if (value === '') {
+      small.textContent = 'Nama wajib diisi';
+      small.style.visibility = 'visible';
+      return false;
+    }
+    small.style.visibility = 'hidden';
+    return true;
+  }
+  
+  // Notifikasi Sukses
+  notif.classList.remove('hidden');
+  notif.textContent = 'Pendaftaran berhasil!';
+  </code></pre>
+            </div>
+          </div>
+  
+          <!-- Future Improvements -->
+          <div class="card-elevated">
+            <h3 class="text-lg font-semibold text-text-primary mb-4">Future Improvements</h3>
+            <ul class="space-y-2 text-text-secondary">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Validasi multi-step form
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Integrasi API untuk pengecekan data ganda
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Dukungan dark mode secara otomatis
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <!-- Future Projects Section -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Proyek Mendatang
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Kumpulan rencana proyek digital yang akan dikembangkan untuk meningkatkan kemampuan dan pengalaman pengguna.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Future Project 1 -->
+                <div class="card group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-3">Sistem Booking Online</h3>
+                    <p class="text-text-secondary mb-4">Platform reservasi berbasis web untuk layanan profesional.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-xs font-medium">React</span>
+                        <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-xs font-medium">Node.js</span>
+                        <span class="px-3 py-1 bg-success-100 text-success-600 rounded-full text-xs font-medium">MongoDB</span>
+                    </div>
+                    <div class="text-sm text-text-secondary">
+                        <span class="font-semibold">Target:</span> Q2 2025
+                    </div>
+                </div>
+
+                <!-- Future Project 2 -->
+                <div class="card group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-accent to-success rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-3">Mobile App (PWA)</h3>
+                    <p class="text-text-secondary mb-4">Progressive Web App untuk manajemen tugas dengan offline capability dan push notifications.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-xs font-medium">PWA</span>
+                        <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-xs font-medium">Service Worker</span>
+                        <span class="px-3 py-1 bg-success-100 text-success-600 rounded-full text-xs font-medium">IndexedDB</span>
+                    </div>
+                    <div class="text-sm text-text-secondary">
+                        <span class="font-semibold">Target:</span> Q3 2025
+                    </div>
+                </div>
+
+                <!-- Future Project 3 -->
+                <div class="card group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-success to-primary rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-3">Data Visualization</h3>
+                    <p class="text-text-secondary mb-4">Dashboard interaktif untuk visualisasi data dengan charts dan graphs menggunakan D3.js dan modern frameworks.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-xs font-medium">D3.js</span>
+                        <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-xs font-medium">Chart.js</span>
+                        <span class="px-3 py-1 bg-success-100 text-success-600 rounded-full text-xs font-medium">API Integration</span>
+                    </div>
+                    <div class="text-sm text-text-secondary">
+                        <span class="font-semibold">Target:</span> Q4 2025
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="Contact.html" class="btn-primary">
+                    Diskusi Proyek Kolaborasi
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-white section-padding">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">B</span>
+                        </div>
+                        <span class="font-semibold text-xl">Raka Maulana Bintang</span>
+                    </div>
+                    <p class="text-secondary-300">
+                        Mahasiswa Informatika yang berminat dalam web development dan sains data, selalu siap untuk tantangan baru.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Navigasi</h3>
+                    <div class="space-y-2">
+                        <a href="Home.html" class="block text-secondary-300 hover:text-white transition-colors">Beranda</a>
+                        <a href="Aboutme.html" class="block text-secondary-300 hover:text-white transition-colors">Tentang Saya</a>
+                        <a href="Portfolio.html" class="block text-secondary-300 hover:text-white transition-colors">Portfolio</a>
+                        <a href="Skills.html" class="block text-secondary-300 hover:text-white transition-colors">Keahlian</a>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Kontak</h3>
+                    <div class="space-y-2">
+                        <p class="text-secondary-300">
+                            <span class="block">Email: rakamaulana215@gmail.com</span>
+                            <span class="block">WhatsApp: +62 881-0277-95533</span>
+                            <span class="block">Surabaya, Indonesia</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Ikuti Saya</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/RakaMaulana7" class="p-2 bg-secondary-800 rounded-lg hover:bg-secondary-700 transition-colors">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-5 h-5" />
+                        </a>
+                        <a href="https://www.instagram.com/_maskaa7/" class="p-2 bg-secondary-800 rounded-lg hover:bg-secondary-700 transition-colors">
+                            <svg class="w-5 h-5 text-pink-400" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary-800 pt-8 text-center">
+                <p class="text-secondary-400">
+                    © 2025 Raka Maulana Bintang.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter and Search Functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const techFilters = document.querySelectorAll('.tech-filter');
+        const searchInput = document.getElementById('search-input');
+        const sortSelect = document.getElementById('sort-select');
+        const resetBtn = document.getElementById('reset-filters');
+        const projectCards = document.querySelectorAll('.project-card');
+        const projectsGrid = document.getElementById('projects-grid');
+        const noResults = document.getElementById('no-results');
+        const projectCount = document.getElementById('project-count');
+
+        let currentCategoryFilter = 'all';
+        let currentTechFilter = 'all';
+        let currentSearchTerm = '';
+        let currentSort = 'newest';
+
+        // Category Filter
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentCategoryFilter = btn.dataset.filter;
+                applyFilters();
+            });
+        });
+
+        // Technology Filter
+        techFilters.forEach(btn => {
+            btn.addEventListener('click', () => {
+                techFilters.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentTechFilter = btn.dataset.tech;
+                applyFilters();
+            });
+        });
+
+        // Search
+        searchInput.addEventListener('input', (e) => {
+            currentSearchTerm = e.target.value.toLowerCase();
+            applyFilters();
+        });
+
+        // Sort
+        sortSelect.addEventListener('change', (e) => {
+            currentSort = e.target.value;
+            applyFilters();
+        });
+
+        // Reset Filters
+        resetBtn.addEventListener('click', () => {
+            currentCategoryFilter = 'all';
+            currentTechFilter = 'all';
+            currentSearchTerm = '';
+            currentSort = 'newest';
+            
+            filterBtns.forEach(b => b.classList.remove('active'));
+            filterBtns[0].classList.add('active');
+            
+            techFilters.forEach(b => b.classList.remove('active'));
+            techFilters[0].classList.add('active');
+            
+            searchInput.value = '';
+            sortSelect.value = 'newest';
+            
+            applyFilters();
+        });
+
+        function applyFilters() {
+            let visibleCards = [];
+            
+            projectCards.forEach(card => {
+                const category = card.dataset.category;
+                const tech = card.dataset.tech;
+                const name = card.dataset.name.toLowerCase();
+                const date = card.dataset.date;
+                
+                // Category filter
+                const categoryMatch = currentCategoryFilter === 'all' || category === currentCategoryFilter;
+                
+                // Technology filter
+                const techMatch = currentTechFilter === 'all' || tech.includes(currentTechFilter);
+                
+                // Search filter
+                const searchMatch = currentSearchTerm === '' || name.includes(currentSearchTerm);
+                
+                if (categoryMatch && techMatch && searchMatch) {
+                    card.style.display = 'block';
+                    visibleCards.push({element: card, date: date, name: name});
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            // Sort visible cards
+            visibleCards.sort((a, b) => {
+                switch(currentSort) {
+                    case 'oldest':
+                        return new Date(a.date) - new Date(b.date);
+                    case 'name':
+                        return a.name.localeCompare(b.name);
+                    case 'newest':
+                    default:
+                        return new Date(b.date) - new Date(a.date);
+                }
+            });
+            
+            // Reorder DOM elements
+            visibleCards.forEach(card => {
+                projectsGrid.appendChild(card.element);
+            });
+            
+            // Update project count
+            projectCount.textContent = visibleCards.length;
+            
+            // Show/hide no results message
+            if (visibleCards.length === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+
+        // Filter button styles
+        const style = document.createElement('style');
+        style.textContent = `
+            .filter-btn {
+                @apply px-4 py-2 rounded-lg border border-border text-text-secondary hover:text-primary hover:border-primary transition-all duration-300 flex items-center text-sm font-medium;
+            }
+            .filter-btn.active {
+                @apply bg-primary text-white border-primary;
+            }
+            .tech-filter {
+                @apply px-3 py-1 rounded-full border border-border text-text-secondary hover:text-primary hover:border-primary transition-all duration-300 text-sm;
+            }
+            .tech-filter.active {
+                @apply bg-primary text-white border-primary;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+
+        // Initialize filters
+        applyFilters();
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

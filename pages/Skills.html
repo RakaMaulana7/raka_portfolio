@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keahlian & Teknologi - Raka Portfolio</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-custom border-b border-border">
+        <div class="container-custom">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">B</span>
+                    </div>
+                    <span class="font-semibold text-xl text-text-primary">Raka Maulana Bintang</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="Home.html" class="text-text-secondary hover:text-primary transition-colors">Beranda</a>
+                    <a href="Aboutme.html" class="text-text-secondary hover:text-primary transition-colors">Tentang Saya</a>
+                    <a href="Education.html" class="text-text-secondary hover:text-primary transition-colors">Pendidikan</a>
+                    <a href="Portfolio.html" class="text-text-secondary hover:text-primary transition-colors">Portfolio</a>
+                    <a href="Skills.html" class="text-primary font-semibold">Keahlian</a>
+                    <a href="Contact.html" class="btn-primary">Kontak</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-surface transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-border mt-4">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <a href="Home.html" class="text-text-secondary">Beranda</a>
+                    <a href="Aboutme.html" class="text-text-secondary">Tentang Saya</a>
+                    <a href="Education.html" class="text-text-secondary">Pendidikan</a>
+                    <a href="Portfolio.html" class="text-text-secondary">Portfolio</a>
+                    <a href="Skills.html" class="text-primary font-semibold">Keahlian</a>
+                    <a href="Contact.html" class="text-text-secondary">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-primary-50 to-accent-50">
+        <div class="container-custom">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="inline-flex items-center px-4 py-2 bg-white rounded-full shadow-sm mb-6">
+                    <svg class="w-5 h-5 text-accent mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    <span class="text-sm font-medium text-text-secondary">Matrix Kompetensi Interaktif</span>
+                </div>
+                
+                <h1 class="text-4xl lg:text-5xl font-bold text-text-primary mb-6">
+                    Keahlian & <span class="text-gradient">Teknologi</span>
+                </h1>
+                
+                <p class="text-xl text-text-secondary leading-relaxed mb-8">
+                    Pemetaan jujur kemampuan teknis saya dengan indikator profisiensi yang realistis dan roadmap pembelajaran berkelanjutan untuk menghadapi tantangan industri teknologi Indonesia.
+                </p>
+
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-primary mb-1">5+</div>
+                        <div class="text-sm text-text-secondary">Teknologi Dipelajari</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-accent mb-1">5</div>
+                        <div class="text-sm text-text-secondary">Sertifikasi</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-success mb-1">2+</div>
+                        <div class="text-sm text-text-secondary">Tahun Belajar</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-secondary mb-1">3</div>
+                        <div class="text-sm text-text-secondary">Kategori Utama</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Matrix -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <!-- Frontend Development Skills -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center mr-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-text-primary">Frontend Development</h2>
+                        <p class="text-text-secondary">Teknologi inti untuk pengembangan antarmuka web modern</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- HTML5 Skill Card -->
+                    <div class="skill-card card-elevated group cursor-pointer" data-skill="html5">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-10 h-10 mr-3" />
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary">HTML5</h3>
+                                    <span class="text-sm text-success-600 font-medium">Mahir</span>
+                                </div>
+                            </div>
+                            <div class="text-2xl font-bold text-success-600">90%</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="w-full bg-border rounded-full h-3">
+                                <div class="bg-success-600 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <p class="text-text-secondary text-sm mb-4">Semantic markup, accessibility standards, dan modern HTML features</p>
+                        
+                        <!-- Hidden Details -->
+                        <div class="skill-details hidden">
+                            <div class="border-t border-border pt-4 mt-4">
+                                <h4 class="font-semibold text-text-primary mb-2">Pengalaman Spesifik:</h4>
+                                <ul class="text-sm text-text-secondary space-y-1">
+                                    <li>• Semantic HTML5 elements (article, section, nav)</li>
+                                    <li>• Form validation dan input types</li>
+                                    <li>• Accessibility (ARIA labels, screen reader support)</li>
+                                    <li>• SEO-friendly markup structure</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="text-xs bg-success-100 text-success-600 px-2 py-1 rounded">Digunakan di 5+ proyek</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CSS3 Skill Card -->
+                    <div class="skill-card card-elevated group cursor-pointer" data-skill="css3">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-10 h-10 mr-3" />
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary">CSS3</h3>
+                                    <span class="text-sm text-success-600 font-medium">Mahir</span>
+                                </div>
+                            </div>
+                            <div class="text-2xl font-bold text-success-600">85%</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="w-full bg-border rounded-full h-3">
+                                <div class="bg-success-600 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <p class="text-text-secondary text-sm mb-4">Flexbox, Grid, animations, responsive design, dan CSS preprocessors</p>
+                        
+                        <!-- Hidden Details -->
+                        <div class="skill-details hidden">
+                            <div class="border-t border-border pt-4 mt-4">
+                                <h4 class="font-semibold text-text-primary mb-2">Pengalaman Spesifik:</h4>
+                                <ul class="text-sm text-text-secondary space-y-1">
+                                    <li>• CSS Grid dan Flexbox untuk layout modern</li>
+                                    <li>• CSS animations dan transitions</li>
+                                    <li>• Responsive design dengan media queries</li>
+                                    <li>• CSS custom properties (variables)</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="text-xs bg-success-100 text-success-600 px-2 py-1 rounded">Mobile-first approach</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript Skill Card -->
+                    <div class="skill-card card-elevated group cursor-pointer" data-skill="javascript">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-10 h-10 mr-3" />
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary">JavaScript</h3>
+                                    <span class="text-sm text-warning-600 font-medium">Menengah</span>
+                                </div>
+                            </div>
+                            <div class="text-2xl font-bold text-warning-600">75%</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="w-full bg-border rounded-full h-3">
+                                <div class="bg-warning-600 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <p class="text-text-secondary text-sm mb-4">ES6+, DOM manipulation, async programming, dan modern JavaScript patterns</p>
+                        
+                        <!-- Hidden Details -->
+                        <div class="skill-details hidden">
+                            <div class="border-t border-border pt-4 mt-4">
+                                <h4 class="font-semibold text-text-primary mb-2">Pengalaman Spesifik:</h4>
+                                <ul class="text-sm text-text-secondary space-y-1">
+                                    <li>• ES6+ features (arrow functions, destructuring)</li>
+                                    <li>• DOM manipulation dan event handling</li>
+                                    <li>• Fetch API dan async/await</li>
+                                    <li>• Local storage dan session management</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="text-xs bg-warning-100 text-warning-600 px-2 py-1 rounded">Terus berkembang</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tailwind CSS Skill Card -->
+                    <div class="skill-card card-elevated group cursor-pointer" data-skill="tailwind">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="Tailwind CSS" class="w-10 h-10 mr-3" />
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary">React.js</h3>
+                                    <span class="text-sm text-warning-600 font-medium">Menengah</span>
+                                </div>
+                            </div>
+                            <div class="text-2xl font-bold text-warning-600">75%</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="w-full bg-border rounded-full h-3">
+                                <div class="bg-success-600 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 78%"></div>
+                            </div>
+                        </div>
+
+                        <p class="text-text-secondary text-sm mb-4">Library JavaScript untuk membangun antarmuka pengguna yang interaktif dan dinamis</p>
+                        
+                        <!-- Hidden Details -->
+                        <div class="skill-details hidden">
+                            <div class="border-t border-border pt-4 mt-4">
+                                <h4 class="font-semibold text-text-primary mb-2">Pengalaman Spesifik:</h4>
+                                <ul class="text-sm text-text-secondary space-y-1">
+                                    <li>• Membuat komponen reusable dengan state & props</li>
+                                    <li>• Menggunakan React Router untuk navigasi SPA</li>
+                                    <li>• Integrasi dengan REST API / Axios / Fetch</li>
+                                    <li>• Penggunaan useState, useEffect, dan custom hooks</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="text-xs bg-success-100 text-success-600 px-2 py-1 rounded">Framework pilihan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Next Skill Card -->
+                    <div class="skill-card card-elevated group cursor-pointer" data-skill="sass">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="SASS" class="w-10 h-10 mr-3" />
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary">Next.js</h3>
+                                    <span class="text-sm text-warning-600 font-medium">Menengah</span>
+                                </div>
+                            </div>
+                            <div class="text-2xl font-bold text-warning-600">60%</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="w-full bg-border rounded-full h-3">
+                                <div class="bg-accent-600 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 60%"></div>
+                            </div>
+                        </div>
+
+                        <p class="text-text-secondary text-sm mb-4">Framework React untuk membangun aplikasi web modern dengan fitur SSR dan routing otomatis</p>
+                        
+                        <!-- Hidden Details -->
+                        <div class="skill-details hidden">
+                            <div class="border-t border-border pt-4 mt-4">
+                                <h4 class="font-semibold text-text-primary mb-2">Pengalaman Spesifik:</h4>
+                                <ul class="text-sm text-text-secondary space-y-1">
+                                    <li>• Routing dinamis dan file-based routing</li>
+                                    <li>• Server-side Rendering (SSR) & Static Generation (SSG)</li>
+                                    <li>• API Routes dan pengambilan data (getServerSideProps)</li>
+                                    <li>• Deployment di Vercel</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="text-xs bg-accent-100 text-accent-600 px-2 py-1 rounded">Sedang dipelajari</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design Tools -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <div class="w-12 h-12 bg-accent rounded-xl flex items-center justify-center mr-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-text-primary">Design Tools</h2>
+                        <p class="text-text-secondary">Tools untuk UI/UX design dan creative workflow</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Figma Skill Card -->
+                    <div class="skill-card card-elevated group cursor-pointer" data-skill="figma">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="w-10 h-10 mr-3" />
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary">Figma</h3>
+                                    <span class="text-sm text-warning-600 font-medium">Menengah</span>
+                                </div>
+                            </div>
+                            <div class="text-2xl font-bold text-warning-600">72%</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="w-full bg-border rounded-full h-3">
+                                <div class="bg-warning-600 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 72%"></div>
+                            </div>
+                        </div>
+
+                        <p class="text-text-secondary text-sm mb-4">UI/UX design, prototyping, dan collaborative design workflow</p>
+                        
+                        <!-- Hidden Details -->
+                        <div class="skill-details hidden">
+                            <div class="border-t border-border pt-4 mt-4">
+                                <h4 class="font-semibold text-text-primary mb-2">Pengalaman Spesifik:</h4>
+                                <ul class="text-sm text-text-secondary space-y-1">
+                                    <li>• Wireframing dan mockup creation</li>
+                                    <li>• Component systems dan design tokens</li>
+                                    <li>• Interactive prototyping</li>
+                                    <li>• Handoff untuk development</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="text-xs bg-warning-100 text-warning-600 px-2 py-1 rounded">Design-to-code workflow</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Adobe Photoshop Skill Card -->
+                    <div class="skill-card card-elevated group cursor-pointer" data-skill="photoshop">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop" class="w-10 h-10 mr-3" />
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary">Adobe Photoshop</h3>
+                                    <span class="text-sm text-accent-600 font-medium">Pemula</span>
+                                </div>
+                            </div>
+                            <div class="text-2xl font-bold text-accent-600">55%</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="w-full bg-border rounded-full h-3">
+                                <div class="bg-accent-600 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 55%"></div>
+                            </div>
+                        </div>
+
+                        <p class="text-text-secondary text-sm mb-4">Image editing, photo manipulation, dan graphic design basics</p>
+                        
+                        <!-- Hidden Details -->
+                        <div class="skill-details hidden">
+                            <div class="border-t border-border pt-4 mt-4">
+                                <h4 class="font-semibold text-text-primary mb-2">Pengalaman Spesifik:</h4>
+                                <ul class="text-sm text-text-secondary space-y-1">
+                                    <li>• Basic photo editing dan color correction</li>
+                                    <li>• Layer management dan masking</li>
+                                    <li>• Web graphics optimization</li>
+                                    <li>• Simple graphic design elements</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="text-xs bg-accent-100 text-accent-600 px-2 py-1 rounded">Untuk web assets</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Canva Skill Card -->
+                    <div class="skill-card card-elevated group cursor-pointer" data-skill="canva">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mr-3">
+                                    <span class="text-white font-bold text-sm">C</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary">Canva</h3>
+                                    <span class="text-sm text-success-600 font-medium">Mahir</span>
+                                </div>
+                            </div>
+                            <div class="text-2xl font-bold text-success-600">82%</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="w-full bg-border rounded-full h-3">
+                                <div class="bg-success-600 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 82%"></div>
+                            </div>
+                        </div>
+
+                        <p class="text-text-secondary text-sm mb-4">Quick graphic design, social media content, dan presentation design</p>
+                        
+                        <!-- Hidden Details -->
+                        <div class="skill-details hidden">
+                            <div class="border-t border-border pt-4 mt-4">
+                                <h4 class="font-semibold text-text-primary mb-2">Pengalaman Spesifik:</h4>
+                                <ul class="text-sm text-text-secondary space-y-1">
+                                    <li>• Social media graphics dan banners</li>
+                                    <li>• Presentation design dan infographics</li>
+                                    <li>• Brand consistency dengan templates</li>
+                                    <li>• Quick mockups dan visual concepts</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="text-xs bg-success-100 text-success-600 px-2 py-1 rounded">Rapid prototyping</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Development Tools -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <div class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mr-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-text-primary">Development Tools</h2>
+                        <p class="text-text-secondary">Tools dan environment untuk development workflow</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Git Skill Card -->
+                    <div class="skill-card card-elevated group cursor-pointer" data-skill="git">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-10 h-10 mr-3" />
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary">Git</h3>
+                                    <span class="text-sm text-warning-600 font-medium">Menengah</span>
+                                </div>
+                            </div>
+                            <div class="text-2xl font-bold text-warning-600">78%</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="w-full bg-border rounded-full h-3">
+                                <div class="bg-warning-600 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 78%"></div>
+                            </div>
+                        </div>
+
+                        <p class="text-text-secondary text-sm mb-4">Version control, branching, merging, dan collaborative development</p>
+                        
+                        <!-- Hidden Details -->
+                        <div class="skill-details hidden">
+                            <div class="border-t border-border pt-4 mt-4">
+                                <h4 class="font-semibold text-text-primary mb-2">Pengalaman Spesifik:</h4>
+                                <ul class="text-sm text-text-secondary space-y-1">
+                                    <li>• Basic Git commands (add, commit, push, pull)</li>
+                                    <li>• Branching dan merging strategies</li>
+                                    <li>• GitHub workflow dan collaboration</li>
+                                    <li>• Conflict resolution basics</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="text-xs bg-warning-100 text-warning-600 px-2 py-1 rounded">Daily workflow tool</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- VS Code Skill Card -->
+                    <div class="skill-card card-elevated group cursor-pointer" data-skill="vscode">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="w-10 h-10 mr-3" />
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary">VS Code</h3>
+                                    <span class="text-sm text-success-600 font-medium">Mahir</span>
+                                </div>
+                            </div>
+                            <div class="text-2xl font-bold text-success-600">92%</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="w-full bg-border rounded-full h-3">
+                                <div class="bg-success-600 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 92%"></div>
+                            </div>
+                        </div>
+
+                        <p class="text-text-secondary text-sm mb-4">Code editor utama dengan extensions dan customization</p>
+                        
+                        <!-- Hidden Details -->
+                        <div class="skill-details hidden">
+                            <div class="border-t border-border pt-4 mt-4">
+                                <h4 class="font-semibold text-text-primary mb-2">Pengalaman Spesifik:</h4>
+                                <ul class="text-sm text-text-secondary space-y-1">
+                                    <li>• Extensions ecosystem (Prettier, ESLint, Live Server)</li>
+                                    <li>• Integrated terminal dan Git integration</li>
+                                    <li>• Debugging dan IntelliSense</li>
+                                    <li>• Workspace customization dan shortcuts</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="text-xs bg-success-100 text-success-600 px-2 py-1 rounded">Primary IDE</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chrome DevTools Skill Card -->
+                    <div class="skill-card card-elevated group cursor-pointer" data-skill="devtools">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" alt="Chrome DevTools" class="w-10 h-10 mr-3" />
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary">Chrome DevTools</h3>
+                                    <span class="text-sm text-warning-600 font-medium">Menengah</span>
+                                </div>
+                            </div>
+                            <div class="text-2xl font-bold text-warning-600">74%</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="w-full bg-border rounded-full h-3">
+                                <div class="bg-warning-600 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 74%"></div>
+                            </div>
+                        </div>
+
+                        <p class="text-text-secondary text-sm mb-4">Debugging, performance analysis, dan responsive testing</p>
+                        
+                        <!-- Hidden Details -->
+                        <div class="skill-details hidden">
+                            <div class="border-t border-border pt-4 mt-4">
+                                <h4 class="font-semibold text-text-primary mb-2">Pengalaman Spesifik:</h4>
+                                <ul class="text-sm text-text-secondary space-y-1">
+                                    <li>• Elements inspection dan CSS debugging</li>
+                                    <li>• Console logging dan JavaScript debugging</li>
+                                    <li>• Network tab untuk performance analysis</li>
+                                    <li>• Responsive design testing</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="text-xs bg-warning-100 text-warning-600 px-2 py-1 rounded">Essential debugging</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NPM Skill Card -->
+                    <div class="skill-card card-elevated group cursor-pointer" data-skill="npm">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="NPM" class="w-10 h-10 mr-3" />
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary">NPM</h3>
+                                    <span class="text-sm text-accent-600 font-medium">Pemula</span>
+                                </div>
+                            </div>
+                            <div class="text-2xl font-bold text-accent-600">65%</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="w-full bg-border rounded-full h-3">
+                                <div class="bg-accent-600 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 65%"></div>
+                            </div>
+                        </div>
+
+                        <p class="text-text-secondary text-sm mb-4">Package management, dependency handling, dan build scripts</p>
+                        
+                        <!-- Hidden Details -->
+                        <div class="skill-details hidden">
+                            <div class="border-t border-border pt-4 mt-4">
+                                <h4 class="font-semibold text-text-primary mb-2">Pengalaman Spesifik:</h4>
+                                <ul class="text-sm text-text-secondary space-y-1">
+                                    <li>• Package installation dan management</li>
+                                    <li>• Package.json configuration</li>
+                                    <li>• Basic npm scripts untuk automation</li>
+                                    <li>• Dependency version management</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="text-xs bg-accent-100 text-accent-600 px-2 py-1 rounded">Learning ecosystem</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vercal Skill Card -->
+                    <div class="skill-card card-elevated group cursor-pointer" data-skill="vercel">
+                        <div class="flex items-center justify-between mb-4">
+                          <div class="flex items-center">
+                            <div class="w-10 h-10 bg-black rounded-lg flex items-center justify-center mr-3">
+                              <img src="https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-black.svg" alt="Vercel" class="w-6 h-6" />
+                            </div>
+                            <div>
+                              <h3 class="text-lg font-semibold text-text-primary">Vercel</h3>
+                              <span class="text-sm text-success-600 font-medium">Mahir</span>
+                            </div>
+                          </div>
+                          <div class="text-2xl font-bold text-success-600">90%</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                          <div class="w-full bg-border rounded-full h-3">
+                            <div class="bg-success-600 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 90%"></div>
+                          </div>
+                        </div>
+                      
+                        <p class="text-text-secondary text-sm mb-4">Platform modern untuk hosting dan deployment aplikasi frontend seperti Next.js</p>
+                      
+                        <!-- Hidden Details -->
+                        <div class="skill-details hidden">
+                          <div class="border-t border-border pt-4 mt-4">
+                            <h4 class="font-semibold text-text-primary mb-2">Pengalaman Spesifik:</h4>
+                            <ul class="text-sm text-text-secondary space-y-1">
+                              <li>• Deploy otomatis dari GitHub</li>
+                              <li>• Setup custom domain dan environment</li>
+                              <li>• Monitoring performa dan log build</li>
+                              <li>• Menggunakan Vercel CLI untuk deployment manual</li>
+                            </ul>
+                            <div class="mt-3">
+                              <span class="text-xs bg-success-100 text-success-600 px-2 py-1 rounded">Platform utama</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+
+                    <!-- GitHub Skill Card -->
+                    <div class="skill-card card-elevated group cursor-pointer" data-skill="github">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-10 h-10 mr-3" />
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary">GitHub</h3>
+                                    <span class="text-sm text-success-600 font-medium">Mahir</span>
+                                </div>
+                            </div>
+                            <div class="text-2xl font-bold text-success-600">85%</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="w-full bg-border rounded-full h-3">
+                                <div class="bg-success-600 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <p class="text-text-secondary text-sm mb-4">Repository management, collaboration, dan project showcase</p>
+                        
+                        <!-- Hidden Details -->
+                        <div class="skill-details hidden">
+                            <div class="border-t border-border pt-4 mt-4">
+                                <h4 class="font-semibold text-text-primary mb-2">Pengalaman Spesifik:</h4>
+                                <ul class="text-sm text-text-secondary space-y-1">
+                                    <li>• Repository management dan organization</li>
+                                    <li>• README documentation dan project showcase</li>
+                                    <li>• Issues tracking dan project boards</li>
+                                    <li>• GitHub Pages untuk static hosting</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="text-xs bg-success-100 text-success-600 px-2 py-1 rounded">Portfolio platform</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Learning -->
+    <section class="section-padding bg-surface">
+        <div class="container-custom">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Sertifikasi & Pembelajaran
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Pencapaian formal dan jalur pembelajaran berkelanjutan untuk mengembangkan keahlian teknis
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Certifications -->
+                <div class="card-elevated">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-success rounded-xl flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-text-primary">Sertifikasi Diperoleh</h3>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4 p-4 bg-white rounded-lg border border-border">
+                            <img src="https://images.unsplash.com/photo-1606868306217-dbf5046868d2?q=80&w=2981&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dicoding Certificate" class="w-12 h-12 object-cover rounded-lg" onerror="this.src='https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-text-primary">Belajar Dasar Pemrograman Web</h4>
+                                <p class="text-sm text-text-secondary">Dicoding Indonesia • 2024</p>
+                                <div class="flex items-center mt-2">
+                                    <span class="text-xs bg-success-100 text-success-600 px-2 py-1 rounded mr-2">HTML</span>
+                                    <span class="text-xs bg-success-100 text-success-600 px-2 py-1 rounded mr-2">CSS</span>
+                                    <span class="text-xs bg-success-100 text-success-600 px-2 py-1 rounded">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 bg-white rounded-lg border border-border">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="FreeCodeCamp Certificate" class="w-12 h-12 object-cover rounded-lg" onerror="this.src='https://images.pixabay.com/photo/2016/10/09/08/32/digital-marketing-1725340_1280.jpg'; this.onerror=null;" />
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-text-primary">Responsive Web Design</h4>
+                                <p class="text-sm text-text-secondary">FreeCodeCamp • 2024</p>
+                                <div class="flex items-center mt-2">
+                                    <span class="text-xs bg-primary-100 text-primary-600 px-2 py-1 rounded mr-2">Responsive Design</span>
+                                    <span class="text-xs bg-primary-100 text-primary-600 px-2 py-1 rounded">Accessibility</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 bg-white rounded-lg border border-border">
+                            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=2939&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Coursera Certificate" class="w-12 h-12 object-cover rounded-lg" onerror="this.src='https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-text-primary">Introduction to Git and GitHub</h4>
+                                <p class="text-sm text-text-secondary">Google via Coursera • 2024</p>
+                                <div class="flex items-center mt-2">
+                                    <span class="text-xs bg-warning-100 text-warning-600 px-2 py-1 rounded mr-2">Git</span>
+                                    <span class="text-xs bg-warning-100 text-warning-600 px-2 py-1 rounded">GitHub</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Learning Path -->
+                <div class="card-elevated">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-accent rounded-xl flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-text-primary">Roadmap Pembelajaran</h3>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="p-4 bg-accent-50 rounded-lg border-l-4 border-accent">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold text-text-primary">React.js Fundamentals</h4>
+                                <span class="text-xs bg-accent text-white px-2 py-1 rounded">Q2 2025</span>
+                            </div>
+                            <p class="text-sm text-text-secondary mb-2">Mempelajari library React untuk pengembangan aplikasi web modern</p>
+                            <div class="w-full bg-accent-200 rounded-full h-2">
+                                <div class="bg-accent h-2 rounded-full" style="width: 25%"></div>
+                            </div>
+                            <p class="text-xs text-accent-600 mt-1">25% - Sudah mulai belajar konsep dasar</p>
+                        </div>
+
+                        <div class="p-4 bg-primary-50 rounded-lg border-l-4 border-primary">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold text-text-primary">Node.js & Express</h4>
+                                <span class="text-xs bg-primary text-white px-2 py-1 rounded">Q3 2025</span>
+                            </div>
+                            <p class="text-sm text-text-secondary mb-2">Backend development dengan JavaScript ecosystem</p>
+                            <div class="w-full bg-primary-200 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 10%"></div>
+                            </div>
+                            <p class="text-xs text-primary-600 mt-1">10% - Dalam tahap perencanaan</p>
+                        </div>
+
+                        <div class="p-4 bg-success-50 rounded-lg border-l-4 border-success">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold text-text-primary">Database Fundamentals</h4>
+                                <span class="text-xs bg-success text-white px-2 py-1 rounded">Q4 2025</span>
+                            </div>
+                            <p class="text-sm text-text-secondary mb-2">MySQL dan MongoDB untuk data management</p>
+                            <div class="w-full bg-success-200 rounded-full h-2">
+                                <div class="bg-success h-2 rounded-full" style="width: 5%"></div>
+                            </div>
+                            <p class="text-xs text-success-600 mt-1">5% - Target pembelajaran mendatang</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Resources -->
+            <div class="card-elevated">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mr-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-text-primary">Sumber Pembelajaran Favorit</h3>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center p-4 bg-white rounded-lg border border-border hover:shadow-md transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dicoding" class="w-12 h-12 object-cover rounded-lg mx-auto mb-3" onerror="this.src='https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <h4 class="font-semibold text-text-primary mb-1">Dicoding</h4>
+                        <p class="text-xs text-text-secondary">Platform pembelajaran Indonesia</p>
+                    </div>
+
+                    <div class="text-center p-4 bg-white rounded-lg border border-border hover:shadow-md transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=2939&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="FreeCodeCamp" class="w-12 h-12 object-cover rounded-lg mx-auto mb-3" onerror="this.src='https://images.pixabay.com/photo/2016/10/09/08/32/digital-marketing-1725340_1280.jpg'; this.onerror=null;" />
+                        <h4 class="font-semibold text-text-primary mb-1">FreeCodeCamp</h4>
+                        <p class="text-xs text-text-secondary">Coding bootcamp gratis</p>
+                    </div>
+
+                    <div class="text-center p-4 bg-white rounded-lg border border-border hover:shadow-md transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1606868306217-dbf5046868d2?q=80&w=2981&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="MDN Web Docs" class="w-12 h-12 object-cover rounded-lg mx-auto mb-3" onerror="this.src='https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <h4 class="font-semibold text-text-primary mb-1">MDN Web Docs</h4>
+                        <p class="text-xs text-text-secondary">Dokumentasi web standar</p>
+                    </div>
+
+                    <div class="text-center p-4 bg-white rounded-lg border border-border hover:shadow-md transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="YouTube" class="w-12 h-12 object-cover rounded-lg mx-auto mb-3" onerror="this.src='https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <h4 class="font-semibold text-text-primary mb-1">YouTube</h4>
+                        <p class="text-xs text-text-secondary">Tutorial video praktis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills in Action -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Keahlian dalam Aksi
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Bagaimana teknologi yang saya kuasai bekerja sama dalam proyek nyata
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-text-primary">Tech Stack Integration</h3>
+                    <p class="text-text-secondary leading-relaxed">
+                        Setiap proyek yang saya kerjakan mengintegrasikan berbagai teknologi untuk menciptakan solusi yang komprehensif. Dari design di Figma hingga deployment di Netlify, setiap skill memiliki peran penting dalam workflow development saya.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm font-bold">1</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-1">Design & Planning</h4>
+                                <p class="text-sm text-text-secondary">Figma untuk wireframing dan mockup, kemudian planning dengan Git repository setup</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm font-bold">2</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-1">Development</h4>
+                                <p class="text-sm text-text-secondary">HTML5 untuk struktur, CSS3/Tailwind untuk styling, JavaScript untuk interaktivitas</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-success rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm font-bold">3</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-1">Testing & Debugging</h4>
+                                <p class="text-sm text-text-secondary">Chrome DevTools untuk debugging, responsive testing, dan performance optimization</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm font-bold">4</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-1">Deployment</h4>
+                                <p class="text-sm text-text-secondary">Git untuk version control, GitHub untuk repository, Netlify untuk hosting dan deployment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="/img/123.jpg" alt="Development workflow" class="w-full h-96 object-cover rounded-2xl shadow-lg" onerror="this.src='https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl"></div>
+                    
+                    <!-- Floating Tech Icons -->
+                    <div class="absolute top-4 right-4 flex space-x-2">
+                        <div class="w-10 h-10 bg-white rounded-lg shadow-md flex items-center justify-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-6 h-6" />
+                        </div>
+                        <div class="w-10 h-10 bg-white rounded-lg shadow-md flex items-center justify-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-6 h-6" />
+                        </div>
+                        <div class="w-10 h-10 bg-white rounded-lg shadow-md flex items-center justify-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-6 h-6" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section-padding bg-gradient-to-r from-primary to-accent">
+        <div class="container-custom">
+            <div class="text-center text-white">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">
+                    Mari Berkolaborasi!
+                </h2>
+                <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
+                    Dengan keahlian yang terus berkembang dan semangat belajar yang tinggi, saya siap berkontribusi dalam proyek web development Anda.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="Portfolio.html" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        Lihat Portfolio
+                    </a>
+                    <a href="Contact.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors">
+                        Hubungi Saya
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-white section-padding">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">B</span>
+                        </div>
+                        <span class="font-semibold text-xl">Raka Maulana Bintang</span>
+                    </div>
+                    <p class="text-secondary-300">
+                        Mahasiswa Informatika yang berminat dalam web development dan sains data, selalu siap untuk tantangan baru.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Navigasi</h3>
+                    <div class="space-y-2">
+                        <a href="Home.html" class="block text-secondary-300 hover:text-white transition-colors">Beranda</a>
+                        <a href="Aboutme.html" class="block text-secondary-300 hover:text-white transition-colors">Tentang Saya</a>
+                        <a href="Portfolio.html" class="block text-secondary-300 hover:text-white transition-colors">Portfolio</a>
+                        <a href="Skills.html" class="block text-secondary-300 hover:text-white transition-colors">Keahlian</a>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Kontak</h3>
+                    <div class="space-y-2">
+                        <p class="text-secondary-300">
+                            <span class="block">Email: rakamaulana215@.com</span>
+                            <span class="block">WhatsApp: +62 881-0277-95533</span>
+                            <span class="block">Surabaya, Indonesia</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Ikuti Saya</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/RakaMaulana7" class="p-2 bg-secondary-800 rounded-lg hover:bg-secondary-700 transition-colors">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-5 h-5" />
+                        </a>
+                        <a href="https://www.instagram.com/_maskaa7/" class="p-2 bg-secondary-800 rounded-lg hover:bg-secondary-700 transition-colors">
+                            <svg class="w-5 h-5 text-pink-400" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary-800 pt-8 text-center">
+                <p class="text-secondary-400">
+                    © 2025 Raka Maulana Bintang.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Skill Card Interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            const skillCards = document.querySelectorAll('.skill-card');
+            
+            skillCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const details = this.querySelector('.skill-details');
+                    const isHidden = details.classList.contains('hidden');
+                    
+                    // Close all other details first
+                    skillCards.forEach(otherCard => {
+                        if (otherCard !== this) {
+                            const otherDetails = otherCard.querySelector('.skill-details');
+                            otherDetails.classList.add('hidden');
+                            otherCard.classList.remove('ring-2', 'ring-primary');
+                        }
+                    });
+                    
+                    // Toggle current card
+                    if (isHidden) {
+                        details.classList.remove('hidden');
+                        this.classList.add('ring-2', 'ring-primary');
+                    } else {
+                        details.classList.add('hidden');
+                        this.classList.remove('ring-2', 'ring-primary');
+                    }
+                });
+            });
+        });
+
+        // Animate progress bars on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const progressBars = entry.target.querySelectorAll('[style*="width:"]');
+                    progressBars.forEach(bar => {
+                        bar.style.width = '0%';
+                        setTimeout(() => {
+                            bar.style.width = bar.getAttribute('data-width') || bar.style.width;
+                        }, 200);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        // Observe skill sections
+        document.querySelectorAll('.skill-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
